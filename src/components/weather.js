@@ -7,6 +7,7 @@ const WeatherHandler = () => {
       <div className="container-div">
         <div className="input-div">
           <input type="search" placeholder="search" className="input" />
+          {/* <i class="fas fa-search"></i> */}
         </div>
 
         <div className="weather-div">
