@@ -2,11 +2,38 @@ import React, { useState, useEffect } from "react";
 import "./style/style.css";
 
 const WeatherHandler = () => {
+  const [city, setCity] = useState(null);
+  const [search, setSearch] = useState("delhi");
+
+  // weatherAPI = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+  // api KEY = 634412f226d82125f33f4e7d7dde8b84
+
+  useEffect(() => {
+    const fetchApi = async () => {
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=634412f226d82125f33f4e7d7dde8b84`;
+
+      const response = await fetch(url);
+      //   console.log(response);
+      const convertJson = await response.json();
+      console.log(convertJson);
+      setCity(convertJson);
+    };
+    fetchApi();
+  }, []);
+
   return (
     <div>
       <div className="container-div">
         <div className="input-div">
-          <input type="search" placeholder="search" className="input" />
+          <input
+            type="search"
+            placeholder="search"
+            className="input"
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
           {/* <i class="fas fa-search"></i> */}
         </div>
 
