@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style/style.css";
 
 const WeatherHandler = () => {
-  const [city, setCity] = useState(null);
+  const [city, setCity] = useState({});
   const [search, setSearch] = useState("delhi");
 
   // weatherAPI = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -10,7 +10,7 @@ const WeatherHandler = () => {
 
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=634412f226d82125f33f4e7d7dde8b84`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=634412f226d82125f33f4e7d7dde8b84`;
 
       const response = await fetch(url);
       //   console.log(response);
@@ -19,14 +19,14 @@ const WeatherHandler = () => {
       setCity(convertJson);
     };
     fetchApi();
-  }, []);
+  }, [search]);
 
   return (
     <div>
       <div className="container-div">
         <div className="input-div">
           <input
-            type="search"
+            type="text"
             placeholder="search"
             className="input"
             value={search}
@@ -37,21 +37,30 @@ const WeatherHandler = () => {
           {/* <i class="fas fa-search"></i> */}
         </div>
 
-        <div className="weather-div">
-          <div className="weather-info">
-            <div className="place-name">indore,MP</div>
-            <div className="date">22 wednesday , 2022</div>
+        {typeof city.main != "undefined" ? (
+          <div className="weather-div">
+            <div className="weather-info">
+              <div className="place-name">
+                {city.name},{city.sys.country}
+              </div>
+              <div className="date">22 wednesday , 2022</div>
 
-            <div className="temp">25°c</div>
-            <div className="cloud">
-              <i className="fas fa-cloud cloud-icon"></i>
-              sunny
+              <div className="temp"> {Math.round(city.main.temp)}°C </div>
+              <div className="cloud">
+                <i className="fas fa-cloud cloud-icon"></i>
+                {city.weather[0].main}
+              </div>
+
+              <div className="precip">Humidity: {city.main.humidity}%</div>
+              <div className="wind">Wind: {city.wind.speed}mph</div>
             </div>
-
-            <div className="precip">Precipitation: 20%</div>
-            <div className="wind">Wind: 3mph</div>
           </div>
-        </div>
+        ) : (
+          <div>
+            <div className="nodata">No Data Found</div>
+            <i class="fas fa-exclamation-triangle error-icon"></i>
+          </div>
+        )}
       </div>
     </div>
   );
