@@ -1,0 +1,27 @@
+.input-div {
+  margin: auto;
+  width: 30%;
+  margin-top: 70px;
+
+  border-bottom: 2px solid gray;
+}
+.input {
+  text-align: left;
+  width: 100%;
+  font-size: 30px;
+  border: 0;
+}
+
+.weather-div {
+  color: white;
+  background-color: #38bdf8;
+  text-align: left;
+  margin: auto;
+  width: 70%;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.weather-info {
+  padding-left: 30px;
+}
