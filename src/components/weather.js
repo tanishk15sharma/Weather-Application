@@ -12,12 +12,16 @@ const WeatherHandler = () => {
         <div className="weather-div">
           <div className="weather-info">
             <div className="place-name">indore,MP</div>
-            <h3 className="date">22 wednesday , 2022</h3>
+            <div className="date">22 wednesday , 2022</div>
 
-            <h1 className="temp">25c</h1>
-            <h2 className="cloud">sunny</h2>
-            <h2 className="precip">precipitation:20%</h2>
-            <h2 className="wind">wind:3mph</h2>
+            <div className="temp">25°c</div>
+            <div className="cloud">
+              <i className="fas fa-cloud cloud-icon"></i>
+              sunny
+            </div>
+
+            <div className="precip">Precipitation: 20%</div>
+            <div className="wind">Wind: 3mph</div>
           </div>
         </div>
       </div>

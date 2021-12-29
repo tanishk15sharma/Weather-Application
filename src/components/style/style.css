@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Prompt:wght@200&family=Roboto:wght@700&display=swap");
+
 .input-div {
   margin: auto;
-  width: 30%;
+  width: 500px;
   margin-top: 70px;
-
+  margin-bottom: 10px;
   border-bottom: 2px solid gray;
 }
 .input {
   text-align: left;
-  width: 100%;
+  width: 500px;
   font-size: 30px;
   border: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 .weather-div {
@@ -17,11 +23,50 @@
   background-color: #38bdf8;
   text-align: left;
   margin: auto;
-  width: 70%;
+
+  width: 800px;
+
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .weather-info {
-  padding-left: 30px;
+  padding-left: 70px;
+}
+.weather-info .place-name {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.weather-info .date {
+  margin-top: -8px;
+}
+
+.weather-info .temp {
+  padding: 5px 0;
+  font-size: 100px;
+}
+.weather-info .cloud {
+  margin-top: -20px;
+  font-weight: 200;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cloud .cloud-icon {
+  opacity: 0.8;
+  padding: 1px;
+  padding-right: 10px;
+}
+
+.weather-info .precip {
+  padding-top: 10px;
+  width: 250px;
+  border-top: 2px solid #d1d5db;
+  font-size: larger;
+}
+
+.weather-info .wind {
+  font-size: larger;
+  padding-bottom: 10px;
 }
