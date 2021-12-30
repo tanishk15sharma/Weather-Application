@@ -17,6 +17,15 @@ const ImageHandler = ({ climate }) => {
     // }
     // console.log(climate.main && climate.main.temp); we can use this too to deep dive.
     // console.log(climate.main?.temp); //this is know as optional chaining used to deep dive into objects.
+    // console.log(temp);
+
+    if (temp > 30) {
+      return <img src={sunny} className="weather-img" />;
+    } else if (temp > 11) {
+      return <img src={haze} className="weather-img" />;
+    } else if (temp < 11) {
+      return <img src={coldest} className="weather-img" />;
+    }
   };
 
   return (

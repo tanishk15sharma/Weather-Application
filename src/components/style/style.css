@@ -24,17 +24,27 @@ body {
 }
 
 .weather-div {
+  position: relative;
   color: white;
   background-color: #38bdf8;
   text-align: left;
   margin: auto;
 
   width: 800px;
-
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .weather-div {
+    width: 95%;
+  }
+  .input-div {
+    width: 70%;
+  }
+}
+
 .weather-info {
   padding-left: 70px;
 }
@@ -94,5 +104,8 @@ body {
   color: #d1d5db;
 }
 
-.windy-icon {
+.weather-img {
+  position: absolute;
+  right: 5%;
+  top: 5%;
 }

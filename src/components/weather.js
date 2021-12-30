@@ -28,7 +28,6 @@ const WeatherHandler = () => {
     <div>
       <div className="container-div">
         {/* {isLoading ? "loading" : <ImageHandler climate={city} />} */}
-        <ImageHandler climate={city} />
 
         <div className="input-div">
           <input
@@ -45,6 +44,8 @@ const WeatherHandler = () => {
 
         {typeof city.main != "undefined" ? (
           <div className="weather-div">
+            <ImageHandler climate={city} />
+
             <div className="weather-info">
               <div className="place-name">
                 {city.name},{city.sys.country}
