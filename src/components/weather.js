@@ -61,6 +61,7 @@ const WeatherHandler = () => {
               <div className="precip">Humidity: {city.main.humidity}%</div>
               <div className="wind">Wind: {city.wind.speed}mph</div>
             </div>
+            <div className="wave"></div>
           </div>
         ) : (
           <div>

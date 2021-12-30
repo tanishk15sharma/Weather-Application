@@ -24,10 +24,10 @@ const ImageHandler = ({ climate }) => {
       return <img src={sunny} className="weather-img" />;
     }
     if (temp > 20 && temp < 30) {
-      return <img src={cloudy} className="weather-img" />;
+      return <img src={cloudy} className="weather-img clear-img" />;
     }
     if (temp > 10 && temp < 20) {
-      return <img src={gif} className="weather-img" />;
+      return <img src={gif} className="weather-img gif-style" />;
     }
     if (temp < 10) {
       return <img src={coldest} className="weather-img" />;
@@ -35,7 +35,7 @@ const ImageHandler = ({ climate }) => {
   };
 
   return (
-    <div>
+    <div className="images-div">
       {console.log(climate)}
 
       {conditionalImage()}

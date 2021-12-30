@@ -30,10 +30,11 @@ body {
   text-align: left;
   margin: auto;
 
-  width: 800px;
+  width: 700px;
   border-radius: 10px;
-  padding-top: 10px;
+
   padding-bottom: 10px;
+  box-shadow: inset -40px -40px 100px #2b8199;
 }
 
 @media screen and (max-width: 600px) {
@@ -49,8 +50,9 @@ body {
   padding-left: 70px;
 }
 .weather-info .place-name {
-  font-size: 50px;
+  font-size: 300%;
   margin-bottom: 0;
+  margin-top: -15px;
 }
 
 .weather-info .date {
@@ -84,7 +86,7 @@ body {
 
 .weather-info .wind {
   font-size: larger;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .nodata {
@@ -106,6 +108,19 @@ body {
 
 .weather-img {
   position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 10%;
+  top: 20%;
+}
+
+.clear-img {
+  top: 20%;
+  /* padding-bottom: 10px; */
+}
+
+.images-div {
+  width: 100px;
+  height: 40px;
+}
+.gif-style {
+  border-radius: 50%;
 }
