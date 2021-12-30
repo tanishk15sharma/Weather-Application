@@ -8,6 +8,7 @@ import cloudy from "./style/cloudy.png";
 import sunny from "./style/sunny.png";
 import coldest from "./style/coldest.png";
 import foggy from "./style/fog.png";
+import gif from "./style/haze.gif";
 
 const ImageHandler = ({ climate }) => {
   const conditionalImage = () => {
@@ -21,9 +22,14 @@ const ImageHandler = ({ climate }) => {
 
     if (temp > 30) {
       return <img src={sunny} className="weather-img" />;
-    } else if (temp > 11) {
-      return <img src={haze} className="weather-img" />;
-    } else if (temp < 11) {
+    }
+    if (temp > 20 && temp < 30) {
+      return <img src={cloudy} className="weather-img" />;
+    }
+    if (temp > 10 && temp < 20) {
+      return <img src={gif} className="weather-img" />;
+    }
+    if (temp < 10) {
       return <img src={coldest} className="weather-img" />;
     }
   };
@@ -31,17 +37,8 @@ const ImageHandler = ({ climate }) => {
   return (
     <div>
       {console.log(climate)}
-      {/* <img src={windy} className="windy-icon" /> */}
+
       {conditionalImage()}
-
-      {/* <img src={sunny} className="windy-icon" /> */}
-
-      {/* <img src={haze} className="windy-icon" /> */}
-      {/* <img src={rain} className="windy-icon" /> */}
-
-      {/* <img src={cloudy} className="windy-icon" /> */}
-      {/* <img src={coldest} className="windy-icon" /> */}
-      {/* <img src={foggy} className="windy-icon" /> */}
     </div>
   );
 };
