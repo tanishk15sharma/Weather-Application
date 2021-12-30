@@ -2,14 +2,15 @@
 
 .input-div {
   margin: auto;
-  width: 500px;
+  width: 465px;
   margin-top: 70px;
   margin-bottom: 10px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #9ca3af;
 }
 .input {
   text-align: left;
-  width: 500px;
+  padding-right: 25px;
+  width: 410px;
   font-size: 30px;
   border: 0;
 }
@@ -59,7 +60,8 @@ body {
 
 .cloud .cloud-icon {
   opacity: 0.8;
-  padding: 1px;
+  /* padding: 1px; */
+  padding-left: 5px;
   padding-right: 15px;
 }
 
@@ -77,7 +79,7 @@ body {
 
 .nodata {
   font-size: 40px;
-  padding-top: 40px;
+  padding-top: 10px;
   color: #fecaca;
 }
 
@@ -85,4 +87,12 @@ body {
   padding-top: 10px;
   font-size: 100px;
   opacity: 0.5;
+}
+
+.search-icon {
+  font-size: 25px;
+  color: #d1d5db;
+}
+
+.windy-icon {
 }

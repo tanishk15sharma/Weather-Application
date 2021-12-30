@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style/style.css";
+import ImageHandler from "./weather-image";
 
 const WeatherHandler = () => {
   const [city, setCity] = useState({});
@@ -15,7 +16,7 @@ const WeatherHandler = () => {
       const response = await fetch(url);
       //   console.log(response);
       const convertJson = await response.json();
-      console.log(convertJson);
+      // console.log(convertJson);
       setCity(convertJson);
     };
     fetchApi();
@@ -24,6 +25,7 @@ const WeatherHandler = () => {
   return (
     <div>
       <div className="container-div">
+        <ImageHandler climate={city} />
         <div className="input-div">
           <input
             type="text"
@@ -34,7 +36,7 @@ const WeatherHandler = () => {
               setSearch(e.target.value);
             }}
           />
-          {/* <i class="fas fa-search"></i> */}
+          <i class="fas fa-search search-icon"></i>
         </div>
 
         {typeof city.main != "undefined" ? (
@@ -57,8 +59,8 @@ const WeatherHandler = () => {
           </div>
         ) : (
           <div>
-            <div className="nodata">No Data Found</div>
             <i class="fas fa-exclamation-triangle error-icon"></i>
+            <div className="nodata">Data Not Found</div>
           </div>
         )}
       </div>
