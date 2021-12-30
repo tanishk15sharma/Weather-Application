@@ -5,6 +5,7 @@ import ImageHandler from "./weather-image";
 const WeatherHandler = () => {
   const [city, setCity] = useState({});
   const [search, setSearch] = useState("delhi");
+  const [isLoading, setIsLoading] = useState(true);
 
   // weatherAPI = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
   // api KEY = 634412f226d82125f33f4e7d7dde8b84
@@ -18,6 +19,7 @@ const WeatherHandler = () => {
       const convertJson = await response.json();
       // console.log(convertJson);
       setCity(convertJson);
+      setIsLoading(false);
     };
     fetchApi();
   }, [search]);
@@ -25,7 +27,9 @@ const WeatherHandler = () => {
   return (
     <div>
       <div className="container-div">
+        {/* {isLoading ? "loading" : <ImageHandler climate={city} />} */}
         <ImageHandler climate={city} />
+
         <div className="input-div">
           <input
             type="text"
@@ -36,7 +40,7 @@ const WeatherHandler = () => {
               setSearch(e.target.value);
             }}
           />
-          <i class="fas fa-search search-icon"></i>
+          <i className="fas fa-search search-icon"></i>
         </div>
 
         {typeof city.main != "undefined" ? (
@@ -59,7 +63,7 @@ const WeatherHandler = () => {
           </div>
         ) : (
           <div>
-            <i class="fas fa-exclamation-triangle error-icon"></i>
+            <i className="fas fa-exclamation-triangle error-icon"></i>
             <div className="nodata">Data Not Found</div>
           </div>
         )}

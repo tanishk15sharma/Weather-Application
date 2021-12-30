@@ -11,12 +11,12 @@ import foggy from "./style/fog.png";
 
 const ImageHandler = ({ climate }) => {
   const conditionalImage = () => {
-    console.log(climate.main.temp);
-    // if (climate.main.temp > 24) {
-    //   return <img src={sunny} className="windy-icon" />;
-    // } else {
-    //   return <img src={rain} className="windy-icon" />;
+    const temp = climate.main?.temp;
+    // if (climate.main) {
+    //   console.log(climate.main.temp);  we can use this to deep dive into climate.main.temp.
     // }
+    // console.log(climate.main && climate.main.temp); we can use this too to deep dive.
+    // console.log(climate.main?.temp); //this is know as optional chaining used to deep dive into objects.
   };
 
   return (
