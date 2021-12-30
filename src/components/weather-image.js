@@ -1,13 +1,8 @@
 import React from "react";
-import windy from "./style/windy.png";
-
-import haze from "./style/haze.png";
-import rain from "./style/rain.png";
 
 import cloudy from "./style/cloudy.png";
 import sunny from "./style/sunny.png";
 import coldest from "./style/coldest.png";
-import foggy from "./style/fog.png";
 import gif from "./style/haze.gif";
 
 const ImageHandler = ({ climate }) => {
@@ -36,7 +31,7 @@ const ImageHandler = ({ climate }) => {
 
   return (
     <div className="images-div">
-      {console.log(climate)}
+      {/* {console.log(climate)} */}
 
       {conditionalImage()}
     </div>

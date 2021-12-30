@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import GetBackgroundImg from "./backgroung";
 import "./style/style.css";
 import ImageHandler from "./weather-image";
 
 const WeatherHandler = () => {
   const [city, setCity] = useState({});
   const [search, setSearch] = useState("delhi");
-  const [isLoading, setIsLoading] = useState(true);
 
   // weatherAPI = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
   // api KEY = 634412f226d82125f33f4e7d7dde8b84
@@ -19,13 +19,13 @@ const WeatherHandler = () => {
       const convertJson = await response.json();
       // console.log(convertJson);
       setCity(convertJson);
-      setIsLoading(false);
     };
     fetchApi();
   }, [search]);
 
   return (
     <div>
+      <GetBackgroundImg search={search} />
       <div className="container-div">
         {/* {isLoading ? "loading" : <ImageHandler climate={city} />} */}
 

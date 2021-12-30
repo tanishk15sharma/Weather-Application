@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Prompt:wght@200&family=Roboto:wght@700&display=swap");
 
+body {
+  margin-top: 150px;
+}
 .input-div {
   margin: auto;
   width: 465px;
@@ -92,7 +95,7 @@ body {
 .nodata {
   font-size: 40px;
   padding-top: 10px;
-  color: #fecaca;
+  color: #f37575;
 }
 
 .error-icon {
@@ -103,7 +106,7 @@ body {
 
 .search-icon {
   font-size: 25px;
-  color: #d1d5db;
+  color: #8c929b;
 }
 
 .weather-img {
