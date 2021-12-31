@@ -95,7 +95,7 @@ body {
 .weather-info .precip {
   padding-top: 10px;
   width: 220px;
-  border-top: 2px solid #d1d5db;
+  border-top: 3px solid #d1d5db;
   font-size: larger;
 }
 
