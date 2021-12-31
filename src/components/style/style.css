@@ -171,8 +171,14 @@ body {
 }
 
 .footer {
-  margin-top: 6%;
-  display: block;
+  /* margin-top: 6%; */
+  margin: auto;
+  left: 500px;
+  /* background-color: #fff; */
+  position: fixed;
+  bottom: 0px;
+  width: 400px;
+  text-align: center;
 }
 
 .footer .github-icon {
