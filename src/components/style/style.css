@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Prompt:wght@200&family=Roboto:wght@700&display=swap");
 
 body {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 .input-div {
   margin: auto;
@@ -162,6 +162,7 @@ body {
   background-color: #dc2626;
   opacity: 0.7;
   border-radius: 30px;
+  margin-bottom: 10.5%;
 }
 
 ::placeholder {
@@ -170,13 +171,13 @@ body {
 }
 
 .footer {
-  margin-top: 3%;
+  margin-top: 6%;
   display: block;
 }
 
 .footer .github-icon {
   padding: 0.5rem;
-  font-size: 100%;
+  font-size: 110%;
   color: #60a5fa;
   box-shadow: 0 4px 8px 0 rgba(218, 211, 211, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -184,14 +185,14 @@ body {
 
 .footer .twitter-icon {
   padding: 0.5rem;
-  font-size: 100%;
+  font-size: 110%;
   color: #60a5fa;
   box-shadow: 0 4px 8px 0 rgba(238, 232, 232, 0.2),
     0 6px 20px 0 rgba(212, 205, 205, 0.19);
 }
 .footer .link-icon {
   padding: 0.5rem;
-  font-size: 100%;
+  font-size: 110%;
   color: #60a5fa;
   box-shadow: 0 4px 8px 0 rgba(221, 216, 216, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
