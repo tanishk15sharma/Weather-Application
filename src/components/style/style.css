@@ -118,7 +118,7 @@ body {
 
 .search-icon {
   font-size: 28px;
-  color: #052055;
+  color: #0a307c;
 }
 
 .weather-img {
@@ -166,19 +166,21 @@ body {
 }
 
 ::placeholder {
-  color: #052055;
+  color: #06235c;
   font-size: larger;
 }
 
 .footer {
   /* margin-top: 6%; */
   margin: auto;
-  left: 500px;
+  left: 45%;
   /* background-color: #fff; */
   position: fixed;
-  bottom: 0px;
-  width: 400px;
+  bottom: 5px;
+  width: 150px;
   text-align: center;
+
+  /* border-radius: 50%; */
 }
 
 .footer .github-icon {
