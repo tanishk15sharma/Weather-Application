@@ -70,6 +70,17 @@ const WeatherHandler = () => {
           </div>
         )}
       </div>
+      <div className="footer">
+        <a href="https://github.com/tanishk15sharma">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://twitter.com/_tanishksharma">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tanishk-sharma-98225a217/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   );
 };

@@ -103,15 +103,15 @@ body {
 }
 
 .nodata {
-  font-size: 40px;
+  font-size: 350%;
   padding-top: 10px;
-  color: #f37575;
+  color: #f5f0f0;
 }
 
 .error-icon {
   padding-top: 10px;
   font-size: 100px;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .search-icon {
@@ -154,5 +154,15 @@ body {
 }
 
 .error-div {
-  background-color: red;
+  margin: auto;
+  width: 25%;
+  padding: 5rem;
+  background-color: #dc2626;
+  opacity: 0.7;
+  border-radius: 30px;
+}
+
+::placeholder {
+  color: #052055;
+  font-size: larger;
 }
