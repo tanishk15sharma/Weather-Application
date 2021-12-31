@@ -166,3 +166,27 @@ body {
   color: #052055;
   font-size: larger;
 }
+
+.footer {
+  margin-top: 11%;
+}
+
+.footer .github-icon {
+  padding: 1rem;
+  font-size: 200%;
+  color: #60a5fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer .twitter-icon {
+  padding: 1rem;
+  font-size: 200%;
+  color: #60a5fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer .link-icon {
+  padding: 1rem;
+  font-size: 200%;
+  color: #60a5fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
