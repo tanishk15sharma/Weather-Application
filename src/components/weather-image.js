@@ -4,6 +4,7 @@ import cloudy from "./style/cloudy.png";
 import sunny from "./style/sunny.png";
 import coldest from "./style/coldest.png";
 import gif from "./style/haze.gif";
+import sungif from "./style/sun.gif";
 
 const ImageHandler = ({ climate }) => {
   const conditionalImage = () => {
@@ -18,13 +19,13 @@ const ImageHandler = ({ climate }) => {
     if (temp > 30) {
       return <img src={sunny} className="weather-img" />;
     }
-    if (temp > 20 && temp < 30) {
+    if ((temp > 20 && temp < 30) || temp == 20) {
       return <img src={cloudy} className="weather-img clear-img" />;
     }
     if (temp > 10 && temp < 20) {
       return <img src={gif} className="weather-img gif-style" />;
     }
-    if (temp < 10) {
+    if (temp <= 10) {
       return <img src={coldest} className="weather-img" />;
     }
   };

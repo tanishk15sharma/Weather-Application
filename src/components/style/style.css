@@ -8,14 +8,23 @@ body {
   width: 465px;
   margin-top: 70px;
   margin-bottom: 10px;
-  border-bottom: 3px solid #9ca3af;
+  /* border-bottom: 3px solid white; */
+  /* background: #328d99; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 50px;
+  box-shadow: inset -90px 7px 100px #2b8199;
 }
 .input {
+  color: rgb(255, 255, 255);
   text-align: left;
   padding-right: 25px;
   width: 410px;
   font-size: 30px;
   border: 0;
+  background: transparent;
 }
 
 .input:focus {
@@ -29,7 +38,7 @@ body {
 .weather-div {
   position: relative;
   color: white;
-  background-color: #38bdf8;
+  background-color: #38bdf800;
   text-align: left;
   margin: auto;
 
@@ -37,7 +46,8 @@ body {
   border-radius: 10px;
 
   padding-bottom: 10px;
-  box-shadow: inset -40px -40px 100px #2b8199;
+  box-shadow: inset 300px -90px 200px #2b8199;
+  /* transition: all ease-in-out 1s; */
 }
 
 @media screen and (max-width: 600px) {
@@ -105,8 +115,8 @@ body {
 }
 
 .search-icon {
-  font-size: 25px;
-  color: #8c929b;
+  font-size: 28px;
+  color: #052055;
 }
 
 .weather-img {
@@ -126,4 +136,23 @@ body {
 }
 .gif-style {
   border-radius: 50%;
+}
+
+.img-bg {
+  opacity: 0.3;
+}
+
+.body-style::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.error-div {
+  background-color: red;
 }

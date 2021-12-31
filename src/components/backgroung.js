@@ -15,11 +15,12 @@ const GetBackgroundImg = ({ search }) => {
     });
   }, [search]);
 
-  return (
-    <div>
-      <img src={image} />
-    </div>
-  );
+  const element = document.body;
+  element.style.background = `url(${image}) no-repeat center`;
+  element.style.backgroundSize = "cover";
+  element.className = "body-style";
+
+  return <div>{/* <img src={image} /> */}</div>;
 };
 
 export default GetBackgroundImg;

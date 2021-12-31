@@ -5,7 +5,7 @@ import ImageHandler from "./weather-image";
 
 const WeatherHandler = () => {
   const [city, setCity] = useState({});
-  const [search, setSearch] = useState("delhi");
+  const [search, setSearch] = useState("indore");
 
   // weatherAPI = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
   // api KEY = 634412f226d82125f33f4e7d7dde8b84
@@ -64,7 +64,7 @@ const WeatherHandler = () => {
             <div className="wave"></div>
           </div>
         ) : (
-          <div>
+          <div className="error-div">
             <i className="fas fa-exclamation-triangle error-icon"></i>
             <div className="nodata">Data Not Found</div>
           </div>
