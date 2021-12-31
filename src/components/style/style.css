@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Prompt:wght@200&family=Roboto:wght@700&display=swap");
 
 body {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .input-div {
   margin: auto;
@@ -12,7 +12,7 @@ body {
   /* background: #328d99; */
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 50px;
   box-shadow: inset -90px 7px 100px #2b8199;
@@ -105,7 +105,7 @@ body {
 }
 
 .nodata {
-  font-size: 350%;
+  font-size: 200%;
   padding-top: 10px;
   color: #f5f0f0;
 }
@@ -170,25 +170,29 @@ body {
 }
 
 .footer {
-  margin-top: 11%;
+  margin-top: 3%;
+  display: block;
 }
 
 .footer .github-icon {
-  padding: 1rem;
-  font-size: 200%;
+  padding: 0.5rem;
+  font-size: 100%;
   color: #60a5fa;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(218, 211, 211, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer .twitter-icon {
-  padding: 1rem;
-  font-size: 200%;
+  padding: 0.5rem;
+  font-size: 100%;
   color: #60a5fa;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(238, 232, 232, 0.2),
+    0 6px 20px 0 rgba(212, 205, 205, 0.19);
 }
 .footer .link-icon {
-  padding: 1rem;
-  font-size: 200%;
+  padding: 0.5rem;
+  font-size: 100%;
   color: #60a5fa;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(221, 216, 216, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
